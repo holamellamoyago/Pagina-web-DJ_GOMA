@@ -108,7 +108,22 @@ a{
 .contenedor{
     max-width: 120rem;
     margin: 0rem auto;
+    position: relative;
+
 }
+
+.contenedor::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Pagina-web-DJ_GOMA/img/fondo--marmol.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+  }
 
 header{
     background-color: black;
@@ -140,7 +155,6 @@ header h1 span{
 
 .main__section--anuncio{
     background-color: red;
-
     text-transform: uppercase;
 }
 
@@ -153,40 +167,31 @@ header h1 span{
 .main__section--1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    flex-direction: row ;
-    
     margin: 0rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+
 }
 
 
 
 .main__section--1 img{
-    max-width: 50%;
+    max-width: 100%;
     width: 100%;
     height: 50rem;
-    filter: blur(0px);
+
+
 
 }
 
 
 
-.main__section__div--2 {
+/* .main__section__div--2 {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-}
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 /* 
 main h1{
